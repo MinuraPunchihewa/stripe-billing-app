@@ -41,6 +41,12 @@ A minimal Flask app for learning Stripe Checkout. It displays a product price fr
 ## Running
 
 ```bash
+uv run python main.py
+```
+
+Or with Python directly:
+
+```bash
 python main.py
 ```
 
