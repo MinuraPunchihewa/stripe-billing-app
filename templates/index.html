@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Checkout{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="icon icon--accent">💳</div>
+  <h1>Pro Plan</h1>
+  <p>Unlock all features with a one-time payment.</p>
+
+  <div class="price">{{ formatted_price }}</div>
+  <div class="price-note">{{ price_note }}</div>
+
+  <form method="POST" action="{{ url_for('index') }}">
+    <button type="submit" class="btn btn--primary">Pay with Stripe</button>
+  </form>
+
+  <div class="footer">
+  Secured by Stripe
+  </div>
+</div>
+{% endblock %}
