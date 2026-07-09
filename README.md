@@ -68,14 +68,3 @@ Use Stripe test card numbers in Checkout, for example:
 - **Decline:** `4000 0000 0000 0002`
 
 Use any future expiry date and any 3-digit CVC. See [Stripe test cards](https://docs.stripe.com/testing#cards) for more options.
-
-## Project structure
-
-```
-main.py              # Flask app and Stripe Checkout logic
-templates/
-  base.html          # Shared layout and styles
-  index.html         # Product / checkout page
-  success.html       # Payment success page
-  cancel.html        # Payment cancelled page
-```
